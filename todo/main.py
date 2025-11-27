@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request, status
-from todo.models import Base
+# from todo.models import Base
+from todo.database import Base
 from todo.database import engine, SessionLocal
 from todo.routers import auth, todos, admin, user
 # commenting out below import of jinja2, because we will use redirectresponse so jinja2 is not required, we will change below
