@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient #The starlette.testclient module requires the httpx package to be installed.(pip install httpx)
-from todo.main import app
+from main import app
 from fastapi import status
 
 client = TestClient(app)

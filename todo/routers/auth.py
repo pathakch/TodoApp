@@ -2,9 +2,9 @@ from datetime import datetime, timedelta, timezone
 from typing import Annotated
 from fastapi import APIRouter, Depends, HTTPException, Request
 from pydantic import BaseModel
-from todo.models import Users
+from models import Users
 from jose import jwt, JWTError
-from todo.database import SessionLocal 
+from database import SessionLocal 
 from sqlalchemy.orm import Session
 from starlette import status
 from passlib.context import CryptContext # needed for hashing password

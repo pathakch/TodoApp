@@ -5,8 +5,8 @@ from starlette import status # Depends is used for dependency injection
 # for example: read_all functon relies on the function get_db for opening up db connection and create a session and being able to 
 # then return that information back to us and then closing the session behind scenes.
 # from  models import Todos
-from todo.models import Todos
-from todo.database import SessionLocal
+from models import Todos
+from database import SessionLocal
 from typing import Annotated
 from sqlalchemy.orm import Session
 from pydantic import BaseModel, Field

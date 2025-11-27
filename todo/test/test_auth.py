@@ -1,5 +1,5 @@
 from test.utils import *
-from todo.routers.auth import get_db, authenticate_user, SECRET_KEY, ALGORITHM, create_access_token, get_current_user
+from routers.auth import get_db, authenticate_user, SECRET_KEY, ALGORITHM, create_access_token, get_current_user
 from jose import jwt
 from datetime import timedelta
 import pytest
