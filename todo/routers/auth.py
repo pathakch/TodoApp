@@ -47,7 +47,7 @@ def get_db():
     finally:
         db.close
 
-templates = Jinja2Templates(directory = "todo/templates")
+templates = Jinja2Templates(directory = "templates")
 
 #### pages ####
 @router.get("/login-page")
