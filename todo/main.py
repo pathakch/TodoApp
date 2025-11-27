@@ -22,7 +22,7 @@ For frontend we need two installations 1. aiofiles 2. jinja2
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="todo/static"), name = "static")
+app.mount("/static", StaticFiles(directory="static"), name = "static")
 
 
 # Below endpoint is created which will allow to open up this html file
