@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
+import psycopg2
 
 
 SQLALCHEMY_DATABASE_URL = 'postgresql://tododb_2f35_user:0nqzMXyHgoBGXKf8eGDLUsW0h8ugKrnc@dpg-d4kqkfs9c44c73f4saa0-a/tododb_2f35'
